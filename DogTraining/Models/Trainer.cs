@@ -23,7 +23,7 @@ namespace DogTraining.Models
 
         /*Combining first & last name to make full name*/
         [Required, Display(Name = "Full Name")]
-        [StringLength(40)]
+        [StringLength(41)]
         public string FullName
         {
             get

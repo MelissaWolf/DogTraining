@@ -8,7 +8,8 @@
 <h1>Index</h1>
 
 <!-- I added an image to make it easy to see which page you are on-->
-<img src="~/images/RowOfDogs.jpg" style="width:100%"/>
+<img src="~/images/RowOfDogs.jpg" style="width:100%" />
+
 <p>
     <a asp-page="Create">Create New</a>
 </p>
@@ -37,32 +38,33 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Dog) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Breed)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DOB)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Gender)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Neutered)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Microchip)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.DogID">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.DogID">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.DogID">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.Dog)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Breed)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DOB)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gender)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Neutered)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Microchip)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.DogID">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.DogID">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.DogID">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

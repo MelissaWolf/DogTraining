@@ -17,8 +17,8 @@ namespace DogTraining.Data
 
         public DbSet<DogTraining.Training.Dog> Dog { get; set; }
 
-        public DbSet<DogTraining.Models.Trainer> Trainer { get; set; }
-
         public DbSet<DogTraining.Training.Schedule> Schedule { get; set; }
+
+        public DbSet<DogTraining.Models.Trainer> Trainer { get; set; }
     }
 }

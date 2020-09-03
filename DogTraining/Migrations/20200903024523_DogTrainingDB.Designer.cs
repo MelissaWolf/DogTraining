@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DogTraining.Migrations
 {
     [DbContext(typeof(DogTrainingContext))]
-    [Migration("20200831232124_DogTrainingDB")]
+    [Migration("20200903024523_DogTrainingDB")]
     partial class DogTrainingDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

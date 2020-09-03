@@ -61,13 +61,13 @@ namespace DogTraining.Migrations
                         column: x => x.DogID,
                         principalTable: "Dog",
                         principalColumn: "DogID",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Schedule_Trainer_TrainerID",
                         column: x => x.TrainerID,
                         principalTable: "Trainer",
                         principalColumn: "TrainerID",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
